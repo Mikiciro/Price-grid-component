@@ -1,3 +1,4 @@
+/* default style */
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -9,8 +10,77 @@
 /* personal style */
 
 body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   font-family: "Karla", sans-serif;
   font-size: 16px;
   background-color: hsl(204, 43%, 93%);
+  width: 100vw;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 10px;
+  overflow: auto; /*l'ho usato per far apparire i bordi arrotondati, senza non funziona*/
+}
+
+.join {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(218, 22%, 67%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.join h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.join h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+.monthly {
+  background-color: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+span {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+button {
+  border: none;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-family: "Karla", sans-serif;
+}
+
+.why {
+  background-color: hsl(179, 62%, 45%);
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
