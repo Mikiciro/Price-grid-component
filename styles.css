@@ -27,7 +27,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   box-sizing: border-box;
   width: 100%;
   border-radius: 10px;
@@ -39,8 +39,10 @@ body {
   color: hsl(218, 22%, 67%);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: flex-start;
-  width: 100%;
+  /* width: 100%; */
+  padding: 20px;
 }
 
 .join h1 {
@@ -56,19 +58,35 @@ body {
   color: hsl(204, 43%, 93%);
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  /* width: 100%; */
+  padding: 20px;
 }
 
-span {
+.price {
   font-size: 40px;
   font-weight: 700;
+  margin: 0 5px 0 0;
+}
+
+.prices {
+  display: flex;
+  align-items: center;
 }
 
 button {
   border: none;
   background-color: hsl(71, 73%, 54%);
   color: white;
-  font-family: "Karla", sans-serif;
+  font-family: inherit;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .why {
@@ -76,11 +94,46 @@ button {
   color: hsl(204, 43%, 93%);
   display: flex;
   flex-direction: column;
-  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  /* width: 100%; */
+  padding: 20px;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+@media screen and (min-width: 425px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    max-width: 768px;
+  }
+
+  .join {
+    display: flex;
+  }
+
+  .monthly {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .why {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  body {
+    display: flex;
+    width: 100vw;
+  }
 }
