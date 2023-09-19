@@ -27,9 +27,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   box-sizing: border-box;
-  width: 100%;
   border-radius: 10px;
   overflow: auto; /*l'ho usato per far apparire i bordi arrotondati, senza non funziona*/
 }
@@ -41,7 +40,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* width: 100%; */
+  width: 100%;
   padding: 20px;
 }
 
@@ -58,10 +57,19 @@ body {
   color: hsl(204, 43%, 93%);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  /* width: 100%; */
+  flex-grow: 1;
   padding: 20px;
+
+}
+
+.why {
+  background-color: hsl(179, 62%, 45%);
+  color: hsl(204, 43%, 93%);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+  
 }
 
 .price {
@@ -87,17 +95,6 @@ button {
   width: 100%;
   padding: 15px;
   border-radius: 10px;
-}
-
-.why {
-  background-color: hsl(179, 62%, 45%);
-  color: hsl(204, 43%, 93%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  /* width: 100%; */
-  padding: 20px;
 }
 
 ul {
