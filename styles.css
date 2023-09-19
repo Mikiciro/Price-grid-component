@@ -30,7 +30,7 @@ body {
   align-items: stretch;
   box-sizing: border-box;
   border-radius: 10px;
-  overflow: auto; /*l'ho usato per far apparire i bordi arrotondati, senza non funziona*/
+  overflow: hidden; /*l'ho usato per far apparire i bordi arrotondati, senza non funziona*/
 }
 
 .join {
