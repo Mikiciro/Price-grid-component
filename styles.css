@@ -59,7 +59,6 @@ body {
   flex-direction: column;
   flex-grow: 1;
   padding: 20px;
-
 }
 
 .why {
@@ -69,7 +68,6 @@ body {
   flex-direction: column;
   flex-grow: 1;
   padding: 20px;
-  
 }
 
 .price {
@@ -119,7 +117,7 @@ ul {
 
   .monthly {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
   }
 
