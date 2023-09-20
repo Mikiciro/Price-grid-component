@@ -39,7 +39,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 22px;
 }
 
 .join h1 {
@@ -56,7 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 20px;
+  padding: 22px;
 }
 
 .why {
@@ -65,7 +65,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  padding: 20px;
+  padding: 22px;
 }
 
 .price {
@@ -88,15 +88,23 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
   padding: 15px;
   border-radius: 10px;
+  width: 80%;
+}
+
+button:hover{
+  background-color: hsl(71, 83%, 54%);
 }
 
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.price-month{
+  color: hsla(204, 45%, 91%, 0.747);
 }
 
 @media screen and (min-width: 426px) {
@@ -111,6 +119,7 @@ ul {
   .join {
     display: flex;
     width: 100%;
+    padding: 40px;
   }
 
   .monthly {
@@ -118,6 +127,7 @@ ul {
     justify-content: center;
     align-items: flex-start;
     flex: 1;
+    padding: 40px;
   }
 
   .why {
@@ -125,6 +135,7 @@ ul {
     justify-content: flex-start;
     align-items: flex-start;
     flex: 1;
+    padding: 40px;
   }
 
   body {
