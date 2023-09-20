@@ -29,7 +29,7 @@ body {
   align-items: stretch;
   box-sizing: border-box;
   border-radius: 10px;
-  overflow: hidden; /*l'ho usato per far apparire i bordi arrotondati, senza non funziona*/
+  overflow: hidden;
 }
 
 .join {
@@ -85,15 +85,12 @@ button {
   color: white;
   font-family: inherit;
   font-size: 16px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 15px;
   border-radius: 10px;
   width: 80%;
 }
 
-button:hover{
+button:hover {
   background-color: hsl(71, 83%, 54%);
 }
 
@@ -103,7 +100,7 @@ ul {
   margin: 0;
 }
 
-.price-month{
+.price-month {
   color: hsla(204, 45%, 91%, 0.747);
 }
 
@@ -112,28 +109,15 @@ ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    height: 100%;
     max-width: 768px;
   }
 
   .join {
-    display: flex;
-    width: 100%;
     padding: 40px;
   }
 
-  .monthly {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex: 1;
-    padding: 40px;
-  }
-
+  .monthly,
   .why {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
     flex: 1;
     padding: 40px;
   }
